@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background:#02aab0;
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    min-height: 100vh;
+    padding:1rem 9%;
+    padding-top: 8rem;
+}
+
+.heading{
+    text-align: center;
+    color:orangered;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding:1rem;
+}
+
+header{
+    width:100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:2.5rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color:#666;
+}
+
+header .logo span{
+    color:#02aab0;
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin-left: 2.5rem;
+}
+
+header .navbar ul li a{
+    color:#02aab0;
+    font-size: 2rem;
+}
+
+header .navbar ul li a.active, header .navbar ul li a:hover{
+    color:orangered;
+    border-bottom: solid orangered;
+    padding:.7rem 0;
+}
+
+#menu{
+    font-size: 3rem;
+    color:#999;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    background:url(images/home.jpg) no-repeat;
+    background-size: 700px;
+    
+    background-position: left bottom;
+}
+
+.home .content{
+    text-align: right;
+    padding-top: 3rem;
+}
+
+.home .content h1{
+    font-size: 5rem;
+    color:#02aab0;
+}
+
+.home .content h3{
+    font-size: 4rem;
+    color:orangered;
+    font-weight: normal;
+}
+
+.home .content .btn{
+    display: inline-block;
+    padding:.7rem 3rem;
+    color:#fff;
+    background:orangered;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    margin-top: 1rem;
+    font-size: 1.7rem;
+}
+
+.home .content .btn:hover{
+    background:#02aab0;
+}
+
+.prevent .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prevent .box-container .box{
+    flex:1 1 30rem;
+    border-radius: .5rem;
+    margin:1rem;
+    padding:1rem;
+    text-align: center;
+}
+
+.prevent .box-container .box img{
+    height:12rem;
+    padding:1rem;
+}
+
+.prevent .box-container .box h3{
+    color:orangered;
+    font-size: 2rem;
+}
+
+.prevent .box-container .box p{
+    color:#02aab0;
+    font-size: 1.4rem;
+    padding:1rem;
+}
+
+.prevent .box-container .box:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.symptoms{
+    background:url(images/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.symptoms .column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.symptoms .column .main-image img{
+    width: 43vh;
+}
+
+.symptoms .column .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.symptoms .column .box-container .box{
+    margin:1rem;
+    text-align: center;
+}
+
+.symptoms .column .box-container .box img{
+    width:20rem;
+    padding:1rem;
+}
+
+.symptoms .column .box-container .box h3{
+    font-size: 2rem;
+    color:orangered;
+}
+
+.precautions .column{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.precautions .column .box-container{
+    margin:1.5rem;
+    flex:1 1 50rem;
+    border:.1rem solid gray;
+    box-shadow: 0 .5rem 1rem gray;
+    border-radius: .5rem;
+}
+
+.precautions .column .box-container .title{
+    padding:1.5rem .5rem;
+    text-align: center;
+    font-size: 2.5rem;
+    background:#333;
+    color:#fff;
+}
+
+.precautions .column .box-container:last-child .title{
+    background: #333;
+}
+
+.precautions .column .box-container .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+.precautions .column .box-container .box img{
+    width:15rem;
+    padding:1rem;
+}
+
+.precautions .column .box-container .box h3{
+    font-size: 2rem;
+    color:orangered;
+}
+
+.precautions .column .box-container .box p{
+    font-size: 1.2rem;
+    color:#02aab0;
+    padding:1rem 0;
+}
+
+.handwash .heading{
+    text-align: center;
+    padding:1rem;
+}
+
+.handwash .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.handwash .box-container .box{
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    margin:2rem;
+    margin-top: 3rem;
+    padding:2rem 3.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.handwash .box-container .box img{
+    height:17rem;
+    width:17rem;
+}
+
+.handwash .box-container .box h3{
+    font-size: 2rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+.handwash .box-container .box span{
+    display: block;
+    position: absolute;
+    top:-2rem; left:-2rem;
+    height:5rem; width:5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    background:#333;
+    border-radius: 5rem;
+}
+
+.footer{
+    background:url(images/background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box{
+    flex:1 1 25rem;
+    margin:2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: orangered;
+    padding:1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    color:#02aab0;
+    padding:.5rem 0;
+}
+
+.footer .box-container .box a{
+    font-size: 1.5rem;
+    color:#02aab0;
+    padding:.5rem 0;
+    display: block;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    border-top: .1rem solid gray;
+    padding:2.5rem 1rem;
+    color:#02aab0;
+}
+
+.footer .credit a{
+    color:orangered;
+}
+
+.scroll-top{
+    position: fixed;
+    bottom:7.5rem; right:1.5rem;
+}
+
+.scroll-top img{
+    width:8rem;
+}

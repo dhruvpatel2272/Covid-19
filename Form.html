@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Patient Registration Form</title>
+        <link rel="stylesheet" href="Form.css">
+    </head>
+    
+    <body >
+        
+        <div>
+            <div class="wrapper">
+                <form action="Form.php" method="POST">
+                    <center>
+                        <h1>Patient Registration Form</h1>
+                    </center>
+                    <label class="text">First Name :-</label>
+                        <input class="text1" type="text" name="Fname" placeholder="" required><br><br>
+                    <label class="text">Last Name :-</label>
+                        <input class="text1" type="text" name="Lname" placeholder="" required><br><br>
+                    <label class="text">Surname :-</label>
+                        <input class="text1" type="text" name="Surname" placeholder="" required><br><br>
+                    
+                    <label class="text">Gender :- </label>
+                    <input type="radio" name="gender" id="male" value="male" >
+                        <label class="text">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                        <label class="text">Female</label>
+                    <input type="radio" name="gender" id="female" value="other" >
+                        <label class="text">Other</label><br><br>
+                    
+                    <label class="text">Date Of Birth (D.O.B) :- </label>
+                        <input class="text1" type="text" name="DOB" id="DOB" required><br><br>
+                    <label class="text">Age :- </label>
+                        <input class="text1" type="text" name="Age" id=""><br><br>
+                    <label class="text">Contact :-</label>
+                        <input class="text1" type="text" name="Contact" id="Contact" placeholder="Enter mobile number" required><br><br>
+                    <label class="text">Email :-</label>
+                        <input class="text1" type="email" name="Email" id="Email" placeholder="Enter email" required><br><br>
+        
+                    <label class="text">Address :-</label><br><br>
+                        <textarea name="Address" id="" cols="40" rows="5" placeholder="Enter your address..."></textarea><br><br>
+                    
+                    <label class="text">Symptoms :-</label><br><br>
+                    <label class="text">Fever :-</label>
+                    <input type="radio" name="Fever" id="Fever" value="YES" >
+                        <label class="text">Yes</label>
+                    <input type="radio" name="Fever" id="Fever" value="NO" >
+                        <label class="text">No</label><br><br>
+    
+                    <label class="text">Cough :-</label>
+                    <input type="radio" name="Cough" id="" value="YES" >
+                        <label class="text">Yes</label>
+                    <input type="radio" name="Cough" id="" value="NO" >
+                        <label class="text">No</label><br><br>
+                    
+                    <label class="text">Sore Throat :-</label>
+                    <input type="radio" name="Sore_Throat" id="" value="YES" >
+                        <label class="text">Yes</label>
+                    <input type="radio" name="Sore_Throat" id="" value="NO" >
+                        <label class="text">No</label><br><br>
+    
+                    <label class="text">Difficulty in Breathing :-</label>
+                    <input type="radio" name="Difficulty_in_Breathing" id="" value="YES" >
+                        <label class="text">Yes</label>
+                    <input type="radio" name="Difficulty_in_Breathing" id="" value="NO" >
+                        <label class="text">No</label><br><br>
+    
+                    <label class="text">Other Symptoms :-</label>
+                    <input type="text" name="Other_Symptoms" id="" class="text1"><br><br>
+    
+                    <input type="submit" name="submit" value="Submit" class="btn">
+       
+                </form>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
